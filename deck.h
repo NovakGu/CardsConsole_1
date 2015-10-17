@@ -11,14 +11,16 @@ class Deck {
 protected:
 	Card *cards[52];
 	GameTaxes* game;
+	int index;
 public:
 	Deck();
+	int getIndex();
 	void shuffleCards();
 	void setGame(GameTaxes*);
-	void preFlop();
-	void Flop();
-	void Turn();
-	void River();
+	std::string preFlop();
+	std::string Flop();
+	std::string Turn();
+	std::string River();
 };
 
 #endif
