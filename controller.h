@@ -17,7 +17,7 @@ protected:
 	std::string replayFile;
 public:
 	void gameSetup(std::istream & input, GameTaxes & game);
-	Controller();
+	Controller(std::string);
 	~Controller();
 	void notifyViews(std::string, int);
 

@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string>
+#include <ctime>
 class Deck {
 protected:
 	Card *cards[52];
@@ -14,6 +15,10 @@ public:
 	Deck();
 	void shuffleCards();
 	void setGame(GameTaxes*);
+	void preFlop();
+	void Flop();
+	void Turn();
+	void River();
 };
 
 #endif

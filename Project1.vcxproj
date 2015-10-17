@@ -131,7 +131,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cards.cpp" />
+    <ClCompile Include="controller.cpp" />
     <ClCompile Include="deck.cpp" />
+    <ClCompile Include="gameTaxes.cpp" />
+    <ClCompile Include="player.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

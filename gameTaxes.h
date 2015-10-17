@@ -29,12 +29,9 @@ public:
 	void gameInit(ConmmuChannel *GameNotification, std::string);
 	int checkWin(std::string);
 	void newRound();
-	void preFlop();
-	void Flop();
-	void Turn();
-	void River();
 	int getNumOfPlayer();
 	int getPoolSize();
 	std::string getTableName();
+	void setTableName(std::string);
 };
 #endif

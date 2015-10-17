@@ -14,16 +14,16 @@ protected:
 	std::string playerName;
 	std::string hand[2];
 	std::string signature;
-	Game *game;
+	GameTaxes *game;
 public:
-	Player(int, std::string, Game*);
+	Player(float, std::string, std::string, GameTaxes*);
 	virtual ~Player();
 	bool getStatus();
 	float getChipLeft();
 	std::string getPlayerName();
-	std::string getHand();
+	std::string *getHand();
 	std::string getSignature();
-	virtual bool move(std::istream&);
+	virtual bool move(std::istream&)=0;
 };
 
 

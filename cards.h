@@ -14,7 +14,7 @@ protected:
 	GameTaxes *game;
 	Deck *deck;
 public:
-	Card(GameTaxes*, Deck*,/*Player*,*/ std::string, int);
+	Card(GameTaxes*,/*Player*,*/ std::string, int);
 	~Card();
 	int getNum();
 	std::string getSuit();
