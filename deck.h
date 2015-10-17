@@ -9,8 +9,11 @@
 class Deck {
 protected:
 	Card *cards[52];
+	GameTaxes* game;
 public:
+	Deck();
 	void shuffleCards();
+	void setGame(GameTaxes*);
 };
 
 #endif

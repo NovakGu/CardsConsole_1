@@ -8,14 +8,15 @@
 
 class Card {
 protected:
-	std::string card_num;
+	int card_num;
 	std::string card_suit;
 //	Player *player;
 	GameTaxes *game;
+	Deck *deck;
 public:
-	Card(GameTaxes*, /*Player*,*/ std::string);
+	Card(GameTaxes*, Deck*,/*Player*,*/ std::string, int);
 	~Card();
-	std::string getNum();
+	int getNum();
 	std::string getSuit();
 };
 

@@ -129,6 +129,10 @@
     <ClInclude Include="textdisplay.h" />
     <ClInclude Include="view.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cards.cpp" />
+    <ClCompile Include="deck.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
