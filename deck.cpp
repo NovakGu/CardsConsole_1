@@ -23,6 +23,11 @@ Deck::Deck() {
 	}
 }
 
+Card *Deck::getCard(int num_index){
+	return cards[num_index];
+}
+
+
 int Deck::getIndex() {
 	return index;
 }

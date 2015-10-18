@@ -21,6 +21,5 @@ public:
 	~Controller();
 	void notifyViews(std::string, int);
 
-
 };
 #endif 

@@ -10,27 +10,27 @@
 
 class ConmmuChannel {
 public:
-	virtual void notifyViews(std::string, std::string) = 0;
+	virtual void notifyViews(std::string, float) = 0;
 };
 
 class GameTaxes {
 protected:
 	ConmmuChannel *GameNotifications;
-	int poolSize;
+	float poolSize;
 	int numOfPlayers;
 	std::string tableName;
 	Deck *deck;
 public:
-	void clearGame();
+	//void clearGame();
 	GameTaxes();
 	~GameTaxes();
-	void notify(std::string, int);
-	bool zeroChips();
-	void gameInit(ConmmuChannel *GameNotification, std::string);
-	int checkWin(std::string);
+	void notify(std::string, float);
+	//bool zeroChips();
+	void gameInit(ConmmuChannel *GameNotification);
+	int evaluate(std::string);
 	void newRound();
 	int getNumOfPlayer();
-	int getPoolSize();
+	float getPoolSize();
 	std::string getTableName();
 	void setTableName(std::string);
 };

@@ -24,6 +24,7 @@ public:
 	std::string *getHand();
 	std::string getSignature();
 	virtual bool move(std::istream&)=0;
+	bool zeroChips();
 };
 
 

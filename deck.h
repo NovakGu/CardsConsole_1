@@ -14,6 +14,7 @@ protected:
 	int index;
 public:
 	Deck();
+	Card *getCard(int);
 	int getIndex();
 	void shuffleCards();
 	void setGame(GameTaxes*);
