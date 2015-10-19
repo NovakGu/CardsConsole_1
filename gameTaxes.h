@@ -33,5 +33,6 @@ public:
 	float getPoolSize();
 	std::string getTableName();
 	void setTableName(std::string);
+	void setPotSize(float);
 };
 #endif

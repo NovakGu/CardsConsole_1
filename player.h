@@ -15,6 +15,7 @@ protected:
 	std::string hand[2];
 	std::string signature;
 	GameTaxes *game;
+	bool dealer;
 public:
 	Player(float, std::string, std::string, GameTaxes*);
 	virtual ~Player();
@@ -25,6 +26,9 @@ public:
 	std::string getSignature();
 	virtual bool move(std::istream&)=0;
 	bool zeroChips();
+	void reverseStatus();
+	bool getDealer();
+	void setDealer(bool);
 };
 
 

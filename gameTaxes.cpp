@@ -4,7 +4,7 @@ using namespace std;
 
 GameTaxes::GameTaxes() {
 	GameNotifications = NULL;
-	poolSize = 0;
+	potSize = 0;
 	numOfPlayers = 0;
 	tableName = "";
 	deck = NULL;
@@ -123,15 +123,22 @@ string evaluate(string allCards) {
 		value = "A";
 		}
 	else if (numOfCardsSameSuite >= 5 && numConsec >= 5) {
-		value = "B"/* + maxnumconsec */;
+		stringstream ss;
+		ss<<maxConsec;
+		value = "B" + ss.str()/* + maxnumconsec */;
 	}
 	else if (numConsec >= 5) {
-		value = "F";
+		stringstream ss;
+		ss<<maxConsec;
+		value = "F" + ss.str();
 	}
 	else if (numOfCardsSameSuite >= 5) {
+		/*stringstream ss;
+		ss<<max*/
 		value = "E";
 	}
 	else if (numOfCardsSameNum == 4) {
+		
 		value = "C";
 	}
 	else if (fullHouse_pair && fullHouse_three) {
@@ -166,12 +173,13 @@ string evaluate(string allCards) {
 
 
 void GameTaxes::newRound() {
-	
+	deck->shuffleCards();
+	potSize=0;
 }
 
 
 float GameTaxes::getPoolSize() {
-	return poolSize;
+	return potSize;
 }
 
 string GameTaxes::getTableName() {
@@ -180,4 +188,9 @@ string GameTaxes::getTableName() {
 
 void GameTaxes::setTableName(string name) {
 	tableName = name;
+}
+
+void GameTaxes::setPotSize(float bet){
+	potSize+=bet;
+	
 }

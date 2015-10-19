@@ -59,7 +59,7 @@ string Deck::preFlop() {
 	//reference on index
 	int &ind = index;
 	for (int i = 0; i < 2; i++) {
-		cardsOnHand = to_string(cards[index]->getNum) + cards[index]->getSuit;
+		cardsOnHand += to_string(cards[index]->getNum) + cards[index]->getSuit;
 		ind++;
 	}
 	//test if index got changed
@@ -70,7 +70,7 @@ string Deck::Flop() {
 	string cardsOnFlop = "";
 	int &ind = index;
 	for (int i = 0; i < 3; i++) {
-		cardsOnFlop = to_string(cards[index]->getNum) + cards[index]->getSuit;
+		cardsOnFlop += to_string(cards[index]->getNum) + cards[index]->getSuit;
 		ind++;
 	}
 	return cardsOnFlop;

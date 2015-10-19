@@ -7,6 +7,7 @@ Player::Player(float chipNum, string name, string sig, GameTaxes *g) {
 	playerName = name;
 	signature = sig;
 	game = g;
+	dealer = false;
 	for (int i = 0; i < 2; i++) {
 		hand[i] = "";
 	}
@@ -35,3 +36,23 @@ string Player::getSignature() {
 	return signature;
 }
 
+bool Player::zeroChips() {
+	if (chipLeft==0){
+		return true;
+	}	
+	return false;
+	
+}
+
+void Player::reverseStatus(){
+	activeStatus=!(activeStatus);
+	
+}
+
+bool Player::getDealer(){
+		return dealer;
+}
+
+void Player::setDealer(bool status){
+		dealer = status;
+}
