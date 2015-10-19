@@ -8,6 +8,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
+
 class ConmmuChannel {
 public:
 	virtual void notifyViews(std::string, float) = 0;
@@ -27,9 +28,8 @@ public:
 	void notify(std::string, float);
 	//bool zeroChips();
 	void gameInit(ConmmuChannel *GameNotification);
-	int evaluate(std::string);
+	std::string evaluate(std::string);
 	void newRound();
-	int getNumOfPlayer();
 	float getPoolSize();
 	std::string getTableName();
 	void setTableName(std::string);

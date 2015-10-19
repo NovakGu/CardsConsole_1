@@ -27,8 +27,13 @@ void GameTaxes::gameInit(ConmmuChannel *GameNotific) {
 	GameNotifications = GameNotific;
 }
 
+std::string GameTaxes::evaluate(std::string)
+{
+	return std::string();
+}
+
 //evaluate
-int evaluate(string allCards) {
+string evaluate(string allCards) {
 	int cardsNum[7];
 	int cardsSuit[7];
 	int strSize = 21;
@@ -44,7 +49,10 @@ int evaluate(string allCards) {
 	int numConsec = 0;
 	int maxConsec = 0;
 	int currNumConsec = 0;
-	int value = 0;
+	string value;
+	bool fullHouse_pair = false;
+	bool fullHouse_three = false;
+	int twoPair = 0;
 	/*
 	// unfinished
 	*/
@@ -70,6 +78,11 @@ int evaluate(string allCards) {
 			numOfCardsSameNum = currNumOfCardsMaxSameNum;
 			maxSameNum = i;
 		}
+		if (currNumOfCardsMaxSameNum == 2) {
+			fullHouse_pair = true;
+			twoPair++;
+		}
+		if (currNumOfCardsMaxSameNum == 3) fullHouse_three = true;
 		currNumOfCardsMaxSameNum = 0;
 	}
 
@@ -101,14 +114,42 @@ int evaluate(string allCards) {
 			numConsec = currNumConsec;
 			maxConsec = cardsNum[i + numConsec - 1];
 		}
+		
 		currNumConsec = 0;
 	}
 
 		//check Royal Flush/ Straight Flush/ Flush
 	if (numOfCardsSameSuite >= 5 && numConsec >= 5 && maxConsec == 15) {
-		return 1;
+		value = "A";
 		}
-
+	else if (numOfCardsSameSuite >= 5 && numConsec >= 5) {
+		value = "B"/* + maxnumconsec */;
+	}
+	else if (numConsec >= 5) {
+		value = "F";
+	}
+	else if (numOfCardsSameSuite >= 5) {
+		value = "E";
+	}
+	else if (numOfCardsSameNum == 4) {
+		value = "C";
+	}
+	else if (fullHouse_pair && fullHouse_three) {
+		value = "D";
+	}
+	else if (numOfCardsSameNum == 3) {
+		value = "G";
+	}
+	else if (numOfCardsSameNum == 2) {
+		value = "I";
+	}
+	else if (twoPair == 2) {
+		value = "H";
+	}
+	else {
+		value = "J";
+	}
+	return value;
 		//check straight
 
 		//check four of a kind
@@ -124,4 +165,19 @@ int evaluate(string allCards) {
 	}
 
 
+void GameTaxes::newRound() {
+	
+}
 
+
+float GameTaxes::getPoolSize() {
+	return poolSize;
+}
+
+string GameTaxes::getTableName() {
+	return tableName;
+}
+
+void GameTaxes::setTableName(string name) {
+	tableName = name;
+}
