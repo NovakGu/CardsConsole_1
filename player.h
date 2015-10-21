@@ -29,6 +29,7 @@ public:
 	void reverseStatus();
 	bool getDealer();
 	void setDealer(bool);
+	void setChip(float);
 };
 
 

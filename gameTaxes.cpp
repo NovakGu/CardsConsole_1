@@ -194,3 +194,11 @@ void GameTaxes::setPotSize(float bet){
 	potSize+=bet;
 	
 }
+
+float GameTaxes::getCurrentAmout(){
+	return currentAmount;
+}
+
+void GameTaxes::setCurrentAmount(float amount){
+		currentAmount=amount;
+}

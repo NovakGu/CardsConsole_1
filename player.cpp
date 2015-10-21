@@ -56,3 +56,7 @@ bool Player::getDealer(){
 void Player::setDealer(bool status){
 		dealer = status;
 }
+
+void Player::setChip(float num){
+	chipLeft=num;
+}

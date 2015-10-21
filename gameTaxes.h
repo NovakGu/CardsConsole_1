@@ -21,6 +21,7 @@ protected:
 	int numOfPlayers;
 	std::string tableName;
 	Deck *deck;
+	float currentAmount;
 public:
 	//void clearGame();
 	GameTaxes();
@@ -34,5 +35,7 @@ public:
 	std::string getTableName();
 	void setTableName(std::string);
 	void setPotSize(float);
+	float getCurrentAmount();
+	void setCurrentAmount(float);
 };
 #endif

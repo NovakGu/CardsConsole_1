@@ -8,6 +8,7 @@ Player(chip,name,signature,game){}
 bool HumanPlayer::move(istream&in){
 	string decision;
 	float betAmout;
+	
 	in>>decision;
 	bool result;
 	//need to change decision to specific taxes vocab
@@ -17,13 +18,33 @@ bool HumanPlayer::move(istream&in){
 		result = true;
 	}
 	else if(decision=="pinggen"){
-		in>>betAmout;
+		while(true){
+		betAmout=game->getCurrentAmount();
+		if(getChipLeft()>=betAmout){
 		game->setPotSize(betAmout);
+		setChip(getChipLeft()-betAmout);
+			}
+		else{
+			cout<<"not enough chip left"<<endl;
+			continue;
+		}
+		break;
+		}
 		result = true;
 	}
 	else if(decision=="jiazhu"){
+		while(true){
 		in>>betAmout;
+		if(getChipLeft()>=betAmout){
 		game->setPotSize(betAmout);
+		setChip(getChipLeft()-betAmout);
+			}
+		else{
+			cout<<"not enough chip left"<<endl;
+			continue;
+		}
+		break;
+		}
 		result = true;
 		}
 		else{
