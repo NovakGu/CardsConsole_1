@@ -7,6 +7,7 @@
 #include <string>
 #include <stdbool.h>
 #include <stdlib.h>
+#include <sstream>
 
 
 class ConmmuChannel {
@@ -17,8 +18,10 @@ public:
 class GameTaxes {
 protected:
 	ConmmuChannel *GameNotifications;
-	float poolSize;
+	float potSize;
 	int numOfPlayers;
+	int tableRadius;
+	int consoleRatio;
 	std::string tableName;
 	Deck *deck;
 	float currentAmount;

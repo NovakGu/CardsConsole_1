@@ -8,6 +8,8 @@ GameTaxes::GameTaxes() {
 	numOfPlayers = 0;
 	tableName = "";
 	deck = NULL;
+	tableRadius = 5;
+	consoleRatio = 4;
 }
 
 GameTaxes::~GameTaxes() {
@@ -195,7 +197,7 @@ void GameTaxes::setPotSize(float bet){
 	
 }
 
-float GameTaxes::getCurrentAmout(){
+float GameTaxes::getCurrentAmount(){
 	return currentAmount;
 }
 

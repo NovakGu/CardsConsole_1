@@ -48,7 +48,7 @@ bool HumanPlayer::move(istream&in){
 		result = true;
 		}
 		else{
-			cout<<"Error: invalid input, can't recgonize the instruction"
+			cout << "Error: invalid input, can't recgonize the instruction" << endl;
 			result = false;
 		}
 		return result;

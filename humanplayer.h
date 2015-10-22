@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 
-class HumanPlayer{
+class HumanPlayer : public Player{
  public:
   HumanPlayer(float, const std::string, std::string, GameTaxes*);
   bool move(std::istream&);

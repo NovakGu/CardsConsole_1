@@ -3,10 +3,10 @@ using namespace std;
 
 Player::Player(float chipNum, string name, string sig, GameTaxes *g) {
 	activeStatus = false;
-	chipLeft = chipNum;
-	playerName = name;
-	signature = sig;
-	game = g;
+	this->chipLeft = chipNum;
+	this->playerName = name;
+	this->signature = sig;
+	this->game = g;
 	dealer = false;
 	for (int i = 0; i < 2; i++) {
 		hand[i] = "";

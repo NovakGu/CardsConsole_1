@@ -1,12 +1,14 @@
 #pragma once
-#ifndef_VIEW_H__
-#define_VIEW_H__
+#ifndef _VIEW_H__
+#define _VIEW_H__
 #include<string>
 #include<iostream>
 #include<stdlib.h>
 class View{
 	protected:
 	const int tablesize;
+	const int tableRadius;
+	const int consoleRatio;
 	public:
 	View();
 	virtual ~View()=0;
