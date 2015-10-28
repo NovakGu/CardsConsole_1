@@ -16,6 +16,7 @@ protected:
 	std::string signature;
 	GameTaxes *game;
 	bool dealer;
+	int nextPlayer;
 public:
 	Player(float, std::string, std::string, GameTaxes*);
 	virtual ~Player();
@@ -30,6 +31,11 @@ public:
 	bool getDealer();
 	void setDealer(bool);
 	void setChip(float);
+	void setPlayerName(std::string);
+	//need to keep track opn nexy player
+	//need to examine if next player is vacent or not
+	//increment?
+	
 };
 
 

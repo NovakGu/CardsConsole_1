@@ -7,6 +7,7 @@ Player::Player(float chipNum, string name, string sig, GameTaxes *g) {
 	this->playerName = name;
 	this->signature = sig;
 	this->game = g;
+	this->nextPlayer = 0;
 	dealer = false;
 	for (int i = 0; i < 2; i++) {
 		hand[i] = "";

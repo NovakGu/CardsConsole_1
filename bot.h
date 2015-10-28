@@ -8,8 +8,9 @@
 #include <string>
 
 class Bot : public Player{
+public:
 	Bot(float, const std::string, std::string, GameTaxes*);
-	bool move();
+	bool move(std::istream& input);
 
 };
 

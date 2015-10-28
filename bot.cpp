@@ -7,7 +7,7 @@ Bot::Bot(float ChipNum, string name, string sig, GameTaxes *game) : Player(ChipN
 
 Bot::~Bot(){}
 
-bool Bot::move(){
+bool Bot::move(std::istream& input){
 	float betAmount;
 	
 	bool result=false;

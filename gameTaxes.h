@@ -12,7 +12,12 @@
 
 class ConmmuChannel {
 public:
-	virtual void notifyViews(std::string, float) = 0;
+	virtual void notifyPreFlopViews(std::string, std::string, int, int)=0;
+	virtual void notifyFlopViews(std::string, std::string, std::string, int, int, int)=0;
+	virtual void notifyTurnViews(std::string, int)=0;
+	virtual void notifyRiverViews(std::string, int)=0;
+	virtual void notifyPotViews(float)=0;
+	virtual void notifyPlayerViews(std::string, float)=0;
 };
 
 class GameTaxes {
@@ -25,6 +30,7 @@ protected:
 	std::string tableName;
 	Deck *deck;
 	float currentAmount;
+	int blind;
 public:
 	//void clearGame();
 	GameTaxes();
@@ -40,5 +46,21 @@ public:
 	void setPotSize(float);
 	float getCurrentAmount();
 	void setCurrentAmount(float);
+	bool setStatus(std::string, float);
+	void setBlind(int);
+	//need a checkwin function returns boolean
+	//need a situation evaluation situation
+	//return true when
+	//1->there's only one player in play
+	//2->final bet is over
+	//3->all player decides all in
+	//4->1 player have chips left, the rest choose all
+	//in due to less chip
+	//evaluate function will take in a string with all players in seat
+	//returns a integer meaning the winning player
+	//haven't decided what to do with the situation
+	//when two or more player have the same level of
+	//hand
+
 };
 #endif

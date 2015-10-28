@@ -29,18 +29,12 @@ void GameTaxes::gameInit(ConmmuChannel *GameNotific) {
 	GameNotifications = GameNotific;
 }
 
-std::string GameTaxes::evaluate(std::string)
-{
-	return std::string();
-}
-
-//evaluate
-string evaluate(string allCards) {
+string GameTaxes::evaluate(string allCards) {
 	int cardsNum[7];
 	int cardsSuit[7];
 	int strSize = 21;
-	string buff="";
-	int index=1;
+	string buff = "";
+	int index = 1;
 	int numOfCardsSameSuite = 0; //num of cards with 
 	int currNumOfCardSameSuite = 0;
 	//string maxSameSuite = "";
@@ -106,32 +100,32 @@ string evaluate(string allCards) {
 	}
 
 	for (int i = 0; i <= 2; i++) {
-		for (int j = i+4; j >i; j--) {
-			if (cardsNum[j] == cardsNum[j -1]+1) {
+		for (int j = i + 4; j >i; j--) {
+			if (cardsNum[j] == cardsNum[j - 1] + 1) {
 				currNumConsec += 1;
-				
+
 			}
 		}
 		if (currNumConsec > numConsec) {
 			numConsec = currNumConsec;
 			maxConsec = cardsNum[i + numConsec - 1];
 		}
-		
+
 		currNumConsec = 0;
 	}
 
-		//check Royal Flush/ Straight Flush/ Flush
+	//check Royal Flush/ Straight Flush/ Flush
 	if (numOfCardsSameSuite >= 5 && numConsec >= 5 && maxConsec == 15) {
 		value = "A";
-		}
+	}
 	else if (numOfCardsSameSuite >= 5 && numConsec >= 5) {
 		stringstream ss;
-		ss<<maxConsec;
+		ss << maxConsec;
 		value = "B" + ss.str()/* + maxnumconsec */;
 	}
 	else if (numConsec >= 5) {
 		stringstream ss;
-		ss<<maxConsec;
+		ss << maxConsec;
 		value = "F" + ss.str();
 	}
 	else if (numOfCardsSameSuite >= 5) {
@@ -140,7 +134,7 @@ string evaluate(string allCards) {
 		value = "E";
 	}
 	else if (numOfCardsSameNum == 4) {
-		
+
 		value = "C";
 	}
 	else if (fullHouse_pair && fullHouse_three) {
@@ -159,19 +153,22 @@ string evaluate(string allCards) {
 		value = "J";
 	}
 	return value;
-		//check straight
+	//check straight
 
-		//check four of a kind
+	//check four of a kind
 
-		//check Full House/three of a kind
+	//check Full House/three of a kind
 
-		//check two pair/one pair
+	//check two pair/one pair
 
-		//check high card
+	//check high card
 
-	
-	
-	}
+
+
+}
+
+
+
 
 
 void GameTaxes::newRound() {
