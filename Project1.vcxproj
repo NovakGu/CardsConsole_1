@@ -119,7 +119,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="5Eval.h" />
+    <ClInclude Include="7Eval.h" />
     <ClInclude Include="bot.h" />
+    <ClInclude Include="Constants.h" />
     <ClInclude Include="controller.h" />
     <ClInclude Include="cards.h" />
     <ClInclude Include="deck.h" />
@@ -131,12 +134,15 @@
     <ClInclude Include="view.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="5eval.cpp" />
+    <ClCompile Include="7_eval.cpp" />
     <ClCompile Include="bot.cpp" />
     <ClCompile Include="cards.cpp" />
     <ClCompile Include="controller.cpp" />
     <ClCompile Include="deck.cpp" />
     <ClCompile Include="gameTaxes.cpp" />
     <ClCompile Include="humanplayer.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="player.cpp" />
     <ClCompile Include="textdisplay.cpp" />
     <ClCompile Include="view.cpp" />

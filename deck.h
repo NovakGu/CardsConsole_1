@@ -1,4 +1,3 @@
-#pragma once
 #ifndef _DECK_H__
 #define _DECK_H__
 #include "cards.h"
@@ -18,10 +17,8 @@ public:
 	int getIndex();
 	void shuffleCards();
 	void setGame(GameTaxes*);
-	std::string preFlop();
-	std::string Flop();
-	std::string Turn();
-	std::string River();
+	int returnNextNum(int);
+	//std::string returnNextSuit(int);
 };
 
 #endif

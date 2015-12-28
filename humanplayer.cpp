@@ -21,7 +21,7 @@ bool HumanPlayer::move(istream&in){
 		while(true){
 		betAmout=game->getCurrentAmount();
 		if(getChipLeft()>=betAmout){
-		game->setPotSize(betAmout);
+		game->addToPotSize(betAmout);
 		setChip(getChipLeft()-betAmout);
 			}
 		else{
@@ -36,7 +36,7 @@ bool HumanPlayer::move(istream&in){
 		while(true){
 		in>>betAmout;
 		if(getChipLeft()>=betAmout){
-		game->setPotSize(betAmout);
+		game->addToPotSize(betAmout);
 		setChip(getChipLeft()-betAmout);
 			}
 		else{

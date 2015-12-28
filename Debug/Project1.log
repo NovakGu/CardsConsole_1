@@ -1,0 +1,153 @@
+﻿Build started 12/20/2015 10:37:02 AM.
+     1>Project "C:\Users\Changheng Gu\documents\visual studio 2015\Projects\Project1\Project1\Project1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt bot.cpp cards.cpp controller.cpp deck.cpp gameTaxes.cpp humanplayer.cpp main.cpp player.cpp textdisplay.cpp view.cpp
+         view.cpp
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\view.cpp(5): error C2789: 'View::tableRadius': an object of const-qualified type must be initialized
+         c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\view.h(10): note: see declaration of 'View::tableRadius'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\view.cpp(5): error C2789: 'View::consoleRatio': an object of const-qualified type must be initialized
+         c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\view.h(11): note: see declaration of 'View::consoleRatio'
+         textdisplay.cpp
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(14): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(81): warning C4566: character represented by universal-character-name '\u2664' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(82): warning C4566: character represented by universal-character-name '\u2261' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(83): warning C4566: character represented by universal-character-name '\u2262' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(84): warning C4566: character represented by universal-character-name '\u2267' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(86): warning C4566: character represented by universal-character-name '\u2664' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(87): warning C4566: character represented by universal-character-name '\u2261' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(88): warning C4566: character represented by universal-character-name '\u2262' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(89): warning C4566: character represented by universal-character-name '\u2267' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(141): warning C4566: character represented by universal-character-name '\u2664' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(142): warning C4566: character represented by universal-character-name '\u2261' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(143): warning C4566: character represented by universal-character-name '\u2262' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(144): warning C4566: character represented by universal-character-name '\u2267' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(146): warning C4566: character represented by universal-character-name '\u2664' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(147): warning C4566: character represented by universal-character-name '\u2261' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(148): warning C4566: character represented by universal-character-name '\u2262' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(149): warning C4566: character represented by universal-character-name '\u2267' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(151): warning C4566: character represented by universal-character-name '\u2664' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(152): warning C4566: character represented by universal-character-name '\u2261' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(153): warning C4566: character represented by universal-character-name '\u2262' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(154): warning C4566: character represented by universal-character-name '\u2267' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(220): warning C4566: character represented by universal-character-name '\u2664' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(221): warning C4566: character represented by universal-character-name '\u2261' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(222): warning C4566: character represented by universal-character-name '\u2262' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(223): warning C4566: character represented by universal-character-name '\u2267' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(251): warning C4566: character represented by universal-character-name '\u2664' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(252): warning C4566: character represented by universal-character-name '\u2261' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(253): warning C4566: character represented by universal-character-name '\u2262' cannot be represented in the current code page (1252)
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(254): warning C4566: character represented by universal-character-name '\u2267' cannot be represented in the current code page (1252)
+         player.cpp
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(11): error C2143: syntax error: missing ';' before '*'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(11): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(12): error C2143: syntax error: missing ';' before '*'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(12): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(14): error C2061: syntax error: identifier 'GameTaxes'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(12): error C2143: syntax error: missing ';' before '*'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(12): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(19): error C2061: syntax error: identifier 'GameTaxes'
+         main.cpp
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(11): error C2143: syntax error: missing ';' before '*'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(11): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(12): error C2143: syntax error: missing ';' before '*'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(12): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(14): error C2061: syntax error: identifier 'GameTaxes'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(12): error C2143: syntax error: missing ';' before '*'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(12): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(19): error C2061: syntax error: identifier 'GameTaxes'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\main.cpp(7): error C2259: 'Controller': cannot instantiate abstract class
+         c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\main.cpp(7): note: due to following members:
+         c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\main.cpp(7): note: 'void ConmmuChannel::notifyPreFlopViews(int,int)': is abstract
+         c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\gametaxes.h(16): note: see declaration of 'ConmmuChannel::notifyPreFlopViews'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\main.cpp(8): error C2228: left of '.start' must have class/struct/union
+         humanplayer.cpp
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(11): error C2143: syntax error: missing ';' before '*'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(11): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(12): error C2143: syntax error: missing ';' before '*'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(12): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(14): error C2061: syntax error: identifier 'GameTaxes'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(12): error C2143: syntax error: missing ';' before '*'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(12): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(19): error C2061: syntax error: identifier 'GameTaxes'
+         gameTaxes.cpp
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(11): error C2143: syntax error: missing ';' before '*'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(11): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(12): error C2143: syntax error: missing ';' before '*'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(12): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(14): error C2061: syntax error: identifier 'GameTaxes'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(12): error C2143: syntax error: missing ';' before '*'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(12): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(19): error C2061: syntax error: identifier 'GameTaxes'
+         deck.cpp
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\gametaxes.h(32): error C2143: syntax error: missing ';' before '*'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\gametaxes.h(32): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\gametaxes.h(32): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(12): error C2143: syntax error: missing ';' before '*'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(12): error C2238: unexpected token(s) preceding ';'
+         controller.cpp
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(11): error C2143: syntax error: missing ';' before '*'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(11): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(12): error C2143: syntax error: missing ';' before '*'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(12): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(14): error C2061: syntax error: identifier 'GameTaxes'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(12): error C2143: syntax error: missing ';' before '*'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(12): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(19): error C2061: syntax error: identifier 'GameTaxes'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\controller.cpp(65): error C3867: 'Player::getChipLeft': non-standard syntax; use '&' to create a pointer to member
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\controller.cpp(65): error C2296: '<': illegal, left operand has type 'float (__thiscall Player::* )(void)'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\controller.cpp(65): error C2297: '<': illegal, right operand has type 'float (__thiscall Player::* )(void)'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\controller.cpp(68): error C3867: 'GameTaxes::getTableName': non-standard syntax; use '&' to create a pointer to member
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\controller.cpp(68): error C2446: '==': no conversion from 'const char *' to 'std::string (__thiscall GameTaxes::* )(void)'
+         c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\controller.cpp(68): note: There is no context in which this conversion is possible
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\controller.cpp(68): error C2040: '==': 'std::string (__thiscall GameTaxes::* )(void)' differs in levels of indirection from 'const char [1]'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\controller.cpp(262): error C3867: 'Player::getStatus': non-standard syntax; use '&' to create a pointer to member
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\controller.cpp(282): error C3867: 'Player::getStatus': non-standard syntax; use '&' to create a pointer to member
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\controller.cpp(346): error C3867: 'Player::getHand': non-standard syntax; use '&' to create a pointer to member
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\controller.cpp(346): error C2109: subscript requires array or pointer type
+         cards.cpp
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(11): error C2143: syntax error: missing ';' before '*'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(11): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(12): error C2143: syntax error: missing ';' before '*'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(12): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(16): error C2143: syntax error: missing ';' before '*'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(16): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(19): error C2061: syntax error: identifier 'GameTaxes'
+         bot.cpp
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(11): error C2143: syntax error: missing ';' before '*'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(11): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(12): error C2143: syntax error: missing ';' before '*'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(12): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\cards.h(14): error C2061: syntax error: identifier 'GameTaxes'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(12): error C2143: syntax error: missing ';' before '*'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(12): error C2238: unexpected token(s) preceding ';'
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\deck.h(19): error C2061: syntax error: identifier 'GameTaxes'
+         Generating Code...
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(91): error C4700: uninitialized local variable 'x' used
+     1>c:\users\changheng gu\documents\visual studio 2015\projects\project1\project1\textdisplay.cpp(91): error C4700: uninitialized local variable 'y' used
+     1>Done Building Project "C:\Users\Changheng Gu\documents\visual studio 2015\Projects\Project1\Project1\Project1.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.93

@@ -3,6 +3,7 @@ using namespace std;
 
 Player::Player(float chipNum, string name, string sig, GameTaxes *g) {
 	activeStatus = false;
+	allInStatus = false;
 	this->chipLeft = chipNum;
 	this->playerName = name;
 	this->signature = sig;
@@ -10,7 +11,7 @@ Player::Player(float chipNum, string name, string sig, GameTaxes *g) {
 	this->nextPlayer = 0;
 	dealer = false;
 	for (int i = 0; i < 2; i++) {
-		hand[i] = "";
+		hand[i] = 0;
 	}
 }
 
@@ -28,9 +29,8 @@ string Player::getPlayerName() {
 	return playerName;
 }
 
-string *Player::getHand() {
-	string *handPointer;
-	handPointer = &hand;
+int Player::getHand(int num) {
+	return hand[num];
 }
 
 string Player::getSignature() {
@@ -59,5 +59,17 @@ void Player::setDealer(bool status){
 }
 
 void Player::setChip(float num){
-	chipLeft=num;
+	chipLeft+=num;
+}
+
+void Player::setHand(int num, int flag) {
+	if (flag == 1) {
+		hand[0] = num;
+	}
+	else if (flag == 2) {
+		hand[1] = num;
+	}
+	else {
+		cout << "invalid flag input" << endl;
+	}
 }

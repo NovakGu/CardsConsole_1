@@ -1,9 +1,9 @@
 #include "cards.h"
 using namespace std;
 
-Card::Card(GameTaxes* g, string suit, int num) {
+Card::Card(GameTaxes* g, int num) {
 	game = g;
-	card_suit = suit;
+	//card_suit = suit;
 	card_num = num;
 }
 
@@ -14,6 +14,6 @@ int Card::getNum() {
 	return card_num;
 }
 
-string Card::getSuit() {
+/*string Card::getSuit() {
 	return card_suit;
-}
+}*/

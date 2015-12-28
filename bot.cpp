@@ -5,7 +5,6 @@ using namespace std;
 
 Bot::Bot(float ChipNum, string name, string sig, GameTaxes *game) : Player(ChipNum, name, sig, game) {}
 
-Bot::~Bot(){}
 
 bool Bot::move(std::istream& input){
 	float betAmount;
@@ -14,7 +13,7 @@ bool Bot::move(std::istream& input){
 	while(true){
 		betAmount=game->getCurrentAmount();
 		if(getChipLeft()>=betAmount){
-			game->setPotSize(betAmount);
+			game->addToPotSize(betAmount);
 			setChip(getChipLeft()-betAmount);
 			result =true;
 		}

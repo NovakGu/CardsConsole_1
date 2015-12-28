@@ -10,9 +10,10 @@
 class Player {
 protected:
 	bool activeStatus;
+	bool allInStatus;
 	float chipLeft;
 	std::string playerName;
-	std::string hand[2];
+	int hand[2];
 	std::string signature;
 	GameTaxes *game;
 	bool dealer;
@@ -23,7 +24,7 @@ public:
 	bool getStatus();
 	float getChipLeft();
 	std::string getPlayerName();
-	std::string *getHand();
+	int getHand(int);
 	std::string getSignature();
 	virtual bool move(std::istream&)=0;
 	bool zeroChips();
@@ -32,6 +33,7 @@ public:
 	void setDealer(bool);
 	void setChip(float);
 	void setPlayerName(std::string);
+	void setHand(int, int);
 	//need to keep track opn nexy player
 	//need to examine if next player is vacent or not
 	//increment?
